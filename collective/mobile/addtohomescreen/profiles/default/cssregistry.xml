@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Setup configuration for the portal_css tool. -->
+<object name="portal_css">
+     <stylesheet
+        id="++resource++add2home/add2home.css"
+        cacheable="True"
+        compression="safe"
+        cookable="True"
+        enabled="True"
+        expression="context/@@plone_context_state/is_portal_root"
+        media=""
+        rel="stylesheet"
+        rendering="link" />
+</object>

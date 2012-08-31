@@ -1,0 +1,37 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.mobile.addtohomescreen">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.mobile.addtohomescreen"
+      directory="profiles/default"
+      description="Plone integration of add-to-home-screen script"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <browser:resourceDirectory
+      name="add2home"
+      directory="static"
+      />
+
+  <browser:page
+      for="*"
+      name="add2homeloader.js" 
+      template="add2homeloader.pt"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
+      name="collective.mobile.addtohomescreen.applemobilewebapp"
+      manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
+      template="applemobilewebapp.pt"
+      permission="zope2.View"
+      />
+
+</configure>

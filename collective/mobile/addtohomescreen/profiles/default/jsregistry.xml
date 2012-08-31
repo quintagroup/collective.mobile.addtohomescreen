@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+    <javascript
+        id="add2homeloader.js" enabled="True"
+        cacheable="True" compression="safe" cookable="True" inline="True"
+        expression="context/@@plone_context_state/is_portal_root" />
+    <javascript
+        id="++resource++add2home/add2home.min.js" enabled="True"
+        cacheable="True" compression="safe" cookable="True" inline="False"
+        expression="context/@@plone_context_state/is_portal_root" />
+</object>
