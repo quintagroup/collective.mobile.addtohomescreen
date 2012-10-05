@@ -28,6 +28,11 @@ setup(name='collective.mobile.addtohomescreen',
           'setuptools',
           # -*- Extra requirements: -*-
       ],
+      extras_require = {
+          'tests': [
+              'plone.app.testing',
+          ]
+      },
       entry_points="""
       # -*- Entry points: -*-
 
