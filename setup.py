@@ -12,6 +12,7 @@ setup(name='collective.mobile.addtohomescreen',
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
           "Framework :: Plone",
+          "Framework :: Plone :: 4.0",
           "Framework :: Plone :: 4.1",
           "Framework :: Zope2",
           "Framework :: Zope3",
@@ -38,6 +39,7 @@ setup(name='collective.mobile.addtohomescreen',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.registry'
           # -*- Extra requirements: -*-
       ],
       extras_require = {
