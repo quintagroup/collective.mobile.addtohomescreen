@@ -34,4 +34,11 @@
       permission="zope2.View"
       />
 
+  <browser:view
+      for="*"
+      name="is_add2homescreen_allowed" 
+      class=".views.AddToHomeScreenAllowed"
+      permission="zope2.View"
+      />
+
 </configure>
