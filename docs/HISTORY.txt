@@ -1,7 +1,13 @@
 Changelog
 =========
 
-0.1dev (unreleased)
+0.2dev (unreleased)
+-------------------
+
+- Updated Add to Homescreen v2.0.7
+
+
+0.1 (unreleased)
 -------------------
 
 - Initial release
