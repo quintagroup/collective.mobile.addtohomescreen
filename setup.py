@@ -6,7 +6,7 @@ version = '0.1'
 setup(name='collective.mobile.addtohomescreen',
       version=version,
       description="Plone integration of add-to-home-screen script",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
